@@ -1,0 +1,23 @@
+host: localhost
+
+server:
+  port: 8060
+spring:
+  # To See H2 Console in Browser:
+  # http://localhost:8060/h2-console
+  # Enabling H2 Console
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:file:./data/inventory-service
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
