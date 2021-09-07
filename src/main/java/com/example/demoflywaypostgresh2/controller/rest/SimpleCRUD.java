@@ -28,14 +28,14 @@ public class SimpleCRUD {
                 new TutorialDTO(4L, "iphone 4", 3.5, "RED"));
 
         return new ResponseEntity<>(lst, HttpStatus.OK);
+
     }
 
     @PostMapping("tutorials")
     public ResponseEntity<TutorialDTO> createNewTutorial(@RequestBody TutorialDTO tu) {
 
         return new ResponseEntity<>(tu, HttpStatus.CREATED);
-        // Exception
-//        return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+
     }
 
     @DeleteMapping("tutorials/{id}")
