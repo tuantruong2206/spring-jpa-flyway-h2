@@ -4,7 +4,7 @@ server:
   port: 8060
 spring:
   application:
-    name: "Application-main"
+    name: "Application-main-integration"
   flyway:
     enabled: false
     baseline-on-migrate: true
@@ -16,7 +16,7 @@ spring:
     console:
       enabled: true
   datasource:
-    url: jdbc:h2:file:./data/inventory-service
+    url: jdbc:h2:mem:test
     driverClassName: org.h2.Driver
     username: sa
     password: password
