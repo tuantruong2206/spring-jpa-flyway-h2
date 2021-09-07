@@ -47,7 +47,7 @@ public class SimpleCRUD {
 
     @PutMapping("tutorials")
     public ResponseEntity<TutorialDTO> updateTutorial(@RequestBody TutorialDTO tu) {
-        tu.setName("Modified !!!");
+        tu.setName("Modified !!! 234");
         return new ResponseEntity<>(tu, HttpStatus.OK);
         //EXCEPTION
 //         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
