@@ -40,7 +40,7 @@ public class SimpleCRUD {
 
     @DeleteMapping("tutorials/{id}")
     public ResponseEntity<HttpStatus> deleteTutorial(@PathVariable("id") Long id) {
-        log.info("Delete ID {}", id);
+        log.info("Delete ID {}change some thing", id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 
     }
