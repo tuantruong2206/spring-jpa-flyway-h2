@@ -44,7 +44,7 @@ public class InventoryController {
      */
     @GetMapping("/products/{id}")
     public ResponseEntity<JsonResponse<ProductFullDTO>> getProductById(@PathVariable Long id) throws Exception {
-        log.info("REST request to get product: {}", id);
+        log.info("REST request to get product: {} new change", id);
         return new ResponseEntity<>(new JsonResponse<>(this.productService.getProductById(id)), HttpStatus.OK);
     }
 
