@@ -27,10 +27,3 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
-#flyway:
-#  enable: false
-#  baselineOnMigrate: true
-#  url: jdbc:h2:file:./data/inventory-service
-##  schemas: USERSERVICE
-#  user: sa
-#  password: password
